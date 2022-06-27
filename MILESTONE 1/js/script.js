@@ -2,6 +2,7 @@ var app = new Vue(
     {
         el: '#root',
         data: {
+            // Array della lista To Do 
             toDo: [
                 {
                     toDoText: 'Comprare il pane',

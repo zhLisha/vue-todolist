@@ -52,3 +52,7 @@ ul{
     cursor: pointer;
 }
 
+.to-do-done {
+    text-decoration: line-through;
+}
+
