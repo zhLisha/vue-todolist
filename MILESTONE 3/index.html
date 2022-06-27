@@ -13,9 +13,9 @@
     
     <div id="root">
         <div class="inputs container">
-            <input type="text" id="user-text" placeholder="Nuovo Elemento">
             <label for="user-text"></label>
-            <button>Aggiungi</button>
+            <input v-model="userInput" type="text" id="user-text" placeholder="Nuovo Elemento">
+            <button  @click="addNewToDo()">Aggiungi</button>
         </div>
 
         <div class="to-do container">
