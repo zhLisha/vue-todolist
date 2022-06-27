@@ -1,0 +1,54 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* COMMON */
+.container {
+    width: 75%;
+    margin: 0 auto;
+}
+
+ul{
+    list-style-type: none;
+}
+
+
+/* Inputs */
+.inputs {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.inputs input{
+    padding: 5px 40px 5px 15px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+.inputs button {
+    padding: 5px 15px 5px 15px;
+    border-radius: 8px;
+    border: 1px solid grey;
+}
+
+/* To do */
+.to-do {
+    background-color: #f4f7f7;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.to-do-list .single-to-do{
+    border-bottom: 1px solid grey;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.delete-actions, .to-do-text {
+    cursor: pointer;
+}
+
