@@ -41,9 +41,9 @@ var app = new Vue(
                 }
             },
 
-            // Al click sul testo della lista, se diventa true allora viene si attiva la classe to-do-done
+            // Al click sul testo della lista il valore true o false cambia di continuo
             lineThroughtToDo(singleToDo) {
-                singleToDo.toDoDone = !singleToDo.toDoDone
+                singleToDo.toDoDone = !singleToDo.toDoDone;
             }
         }
     }
