@@ -39,6 +39,11 @@ var app = new Vue(
 
                     this.userInput = '';
                 }
+            },
+
+            // Al click sul testo della lista, se diventa true allora viene si attiva la classe to-do-done
+            lineThroughtToDo(singleToDo) {
+                singleToDo.toDoDone = !singleToDo.toDoDone
             }
         }
     }

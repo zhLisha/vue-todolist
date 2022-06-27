@@ -20,8 +20,8 @@
 
         <div class="to-do container">
             <ul class="to-do-list">
-                <li v-for="(singleToDo, index) in toDo" class="single-to-do" :class="{'to-do-done': singleToDo.toDoDone}">
-                    <span class="to-do-text"> {{singleToDo.toDoText}} </span>
+                <li v-for="(singleToDo, index) in toDo" class="single-to-do" >
+                    <span @click="lineThroughtToDo(singleToDo)" :class="{'to-do-done': singleToDo.toDoDone}" class="to-do-text"> {{singleToDo.toDoText}} </span>
                     <div @click="removeToDo(index)" class="delete-actions">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
