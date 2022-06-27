@@ -14,7 +14,7 @@
     <div id="root">
         <div class="inputs container">
             <label for="user-text"></label>
-            <input v-model="userInput" type="text" id="user-text" placeholder="Nuovo Elemento">
+            <input v-model="userInput" @keyup.enter="addNewToDo()" type="text" id="user-text" placeholder="Nuovo Elemento">
             <button  @click="addNewToDo()">Aggiungi</button>
         </div>
 
