@@ -22,7 +22,7 @@
             <ul class="to-do-list">
                 <li v-for="(singleToDo, index) in toDo" class="single-to-do" :class="{'to-do-done': singleToDo.toDoDone}">
                     <span class="to-do-text"> {{singleToDo.toDoText}} </span>
-                    <div class="delete-actions">
+                    <div @click="removeToDo(index)" class="delete-actions">
                         <i class="fa-solid fa-xmark"></i>
                     </div>
                 </li>
